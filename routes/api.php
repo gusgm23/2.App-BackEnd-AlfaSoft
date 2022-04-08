@@ -24,3 +24,18 @@ Route::get('obtenerRolesId/{id}'        ,'\App\Http\Controllers\RolController@ge
 Route::post('crearRol'                  ,'\App\Http\Controllers\RolController@createRol');
 Route::put('actualizarRol/{id}'         ,'\App\Http\Controllers\RolController@updateRol');
 Route::get('obtenerRolesActivos'        ,'\App\Http\Controllers\RolController@getRolesActivos');
+Route::delete('eliminarRoles/{id}'      ,'\App\Http\Controllers\RolController@deleteRolId');
+
+//API para los usuarios
+Route::get('obtenerUsuarios'            ,'\App\Http\Controllers\UserController@getUser');
+Route::get('obtenerUsuariosId/{id}'     ,'\App\Http\Controllers\UserController@getUserId');
+Route::post('crearUsuarios'             ,'\App\Http\Controllers\UserController@createUser');
+Route::put('actualizarUsuarios/{id}'    ,'\App\Http\Controllers\UserController@updateUser');
+Route::delete('eliminarUsuarios/{id}'   ,'\App\Http\Controllers\UserController@deleteUserId');
+
+//API para las solicitudes de aulas
+Route::get('obtenerSolicitud'           ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAula');
+Route::get('obtenerSolicitudId/{id}'    ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAulaId');
+Route::post('crearSolicitud'            ,'\App\Http\Controllers\SolicitudAulaController@createSolicitudAula');
+Route::put('actualizarSolicitud/{id}'   ,'\App\Http\Controllers\SolicitudAulaController@updateSolicitudAula');
+Route::delete('eliminarSolicitud/{id}'  ,'\App\Http\Controllers\SolicitudAulaController@deleteSolicitudAulaId');

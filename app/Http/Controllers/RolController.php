@@ -35,6 +35,15 @@ class RolController extends Controller
         return response($rol,200);
     }
 
+    public function deleteRolId($id){
+        $rol = Rol::find($id);
+        if(is_null($rol)){
+            return response()->json(['Mensaje'=>'Rol no encontrado'],404);
+        }
+        $rol->delete();
+        return response()->json(['Mensaje'=>'Rol Eliminado'],200);
+    }
+
     //para ver los roles que estan activos
     public function getRolesActivos(){
         $rol = Rol::select("*")->where("estado", "=", "Activo")->get();
