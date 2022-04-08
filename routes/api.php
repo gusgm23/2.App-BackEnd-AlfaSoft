@@ -39,3 +39,10 @@ Route::get('obtenerSolicitudId/{id}'    ,'\App\Http\Controllers\SolicitudAulaCon
 Route::post('crearSolicitud'            ,'\App\Http\Controllers\SolicitudAulaController@createSolicitudAula');
 Route::put('actualizarSolicitud/{id}'   ,'\App\Http\Controllers\SolicitudAulaController@updateSolicitudAula');
 Route::delete('eliminarSolicitud/{id}'  ,'\App\Http\Controllers\SolicitudAulaController@deleteSolicitudAulaId');
+
+//API para las aulas
+Route::get('obtenerAula'               ,'\App\Http\Controllers\AulaController@getAula');
+Route::get('obtenerAulaId/{id}'        ,'\App\Http\Controllers\AulaController@getAulaId');
+Route::post('crearAula'                ,'\App\Http\Controllers\AulaController@createAula');
+Route::put('actualizarAula/{id}'       ,'\App\Http\Controllers\AulaController@updateAula');
+Route::delete('eliminarAula/{id}'      ,'\App\Http\Controllers\AulaController@deleteAulaId');
