@@ -14,27 +14,32 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->string('id', 30)->primary();
             $table->string('name');
-            $table->string('cargoUsuario');
+            $table->string('apellido');
             $table->string('telefonoUsuario');
             $table->string('direccionUsuario');
-            $table->string('estadoUsuario');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('estadoUsuario');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('rol');
+            $table->foreign('rol')->references('id')->on('rols')->nullable()->onDelete('SET NULL');
         });
 
         DB::table('users')->insert(array(
-            'name'=>'Viviana',          
-            'cargoUsuario'=>'Docente',
+            'id'=>'user-1',
+            'name'=>'Viviana',
+            'apellido'=>'Gutierrez',          
             'telefonoUsuario'=>'73443553',
             'direccionUsuario'=>'av. heroinas',
-            'estadoUsuario'=>'habilitado',
             'email'=>'viviana@gmail.com',
-            'password'=>'123456'
+            'password'=>'123456',
+            'estadoUsuario'=>'Activo',
+            'rol'=>'rol-2' 
         ));
     }
 

@@ -39,4 +39,10 @@ class UserController extends Controller
         $user->delete();
         return response()->json(['Mensaje'=>'Usuario Eliminado'],200);
     }
+
+    //para ver los usuarios que estan activos
+    public function getUserActivos(){
+        $user = User::select("*")->where("estadoUsuario", "=", "Activo")->get();
+        return response()->json($user,200);
+    }
 }

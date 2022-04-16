@@ -32,6 +32,7 @@ Route::get('obtenerUsuariosId/{id}'     ,'\App\Http\Controllers\UserController@g
 Route::post('crearUsuarios'             ,'\App\Http\Controllers\UserController@createUser');
 Route::put('actualizarUsuarios/{id}'    ,'\App\Http\Controllers\UserController@updateUser');
 Route::delete('eliminarUsuarios/{id}'   ,'\App\Http\Controllers\UserController@deleteUserId');
+Route::get('obtenerUsuariosActivos'     ,'\App\Http\Controllers\UserController@getUserActivos');
 
 //API para las solicitudes de aulas
 Route::get('obtenerSolicitud'           ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAula');
@@ -41,8 +42,17 @@ Route::put('actualizarSolicitud/{id}'   ,'\App\Http\Controllers\SolicitudAulaCon
 Route::delete('eliminarSolicitud/{id}'  ,'\App\Http\Controllers\SolicitudAulaController@deleteSolicitudAulaId');
 
 //API para las aulas
-Route::get('obtenerAula'               ,'\App\Http\Controllers\AulaController@getAula');
-Route::get('obtenerAulaId/{id}'        ,'\App\Http\Controllers\AulaController@getAulaId');
-Route::post('crearAula'                ,'\App\Http\Controllers\AulaController@createAula');
-Route::put('actualizarAula/{id}'       ,'\App\Http\Controllers\AulaController@updateAula');
-Route::delete('eliminarAula/{id}'      ,'\App\Http\Controllers\AulaController@deleteAulaId');
+Route::get('obtenerAula'                ,'\App\Http\Controllers\AulaController@getAula');
+Route::get('obtenerAulaId/{id}'         ,'\App\Http\Controllers\AulaController@getAulaId');
+Route::post('crearAula'                 ,'\App\Http\Controllers\AulaController@createAula');
+Route::put('actualizarAula/{id}'        ,'\App\Http\Controllers\AulaController@updateAula');
+Route::delete('eliminarAula/{id}'       ,'\App\Http\Controllers\AulaController@deleteAulaId');
+
+//API para las materias
+Route::get('obtenerMaterias'            ,'\App\Http\Controllers\MateriaController@getMateria');
+Route::get('obtenerMateriasId/{id}'     ,'\App\Http\Controllers\MateriaController@getMateriaId');
+Route::post('crearMateria'              ,'\App\Http\Controllers\MateriaController@createMateria');
+Route::put('actualizarMateria/{id}'     ,'\App\Http\Controllers\MateriaController@updateMateria');
+Route::delete('eliminarMateria/{id}'    ,'\App\Http\Controllers\MateriaController@deleteMateriaId');
+
+

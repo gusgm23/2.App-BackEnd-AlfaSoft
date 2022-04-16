@@ -14,16 +14,30 @@ class CreateRolsTable extends Migration
     public function up()
     {
         Schema::create('rols', function (Blueprint $table) {
-            $table->id();
+            $table->string('id', 30)->primary();
             $table->string('rol');
             $table->string('estado');
             $table->timestamps();
         });
 
-        DB::table('rols')->insert(array('rol'=>'Administrador'          ,'estado'=>'Activo'));
-        DB::table('rols')->insert(array('rol'=>'Docente'                ,'estado'=>'Activo'));
-        DB::table('rols')->insert(array('rol'=>'Auxiliar'               ,'estado'=>'Activo'));
-        DB::table('rols')->insert(array('rol'=>'Prueba'                 ,'estado'=>'Inactivo'));
+        DB::table('rols')->insert(array(
+            'id'=>'rol-1',
+            'rol'=>'Administrador',
+            'estado'=>'Activo'
+        ));
+
+        DB::table('rols')->insert(array(
+            'id'=>'rol-2',
+            'rol'=>'Docente',
+            'estado'=>'Activo'
+        ));
+
+        DB::table('rols')->insert(array(
+            'id'=>'rol-3',
+            'rol'=>'Auxiliar',
+            'estado'=>'Activo'
+        ));
+
     }
 
     /**
