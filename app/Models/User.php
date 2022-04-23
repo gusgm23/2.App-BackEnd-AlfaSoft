@@ -17,9 +17,9 @@ class User extends Authenticatable
      * @var array
      */
     public $timestamps = false;
-    protected $keyType = 'string';
+    //protected $keyType = 'string';
     protected $fillable = [
-        'id',
+        //'id',
         'name',          
         'apellido',
         'telefonoUsuario',
@@ -27,7 +27,7 @@ class User extends Authenticatable
         'email',
         'password',
         'estadoUsuario',
-        'rol'
+        'rol_id'
         
     ];
 

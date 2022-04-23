@@ -11,7 +11,7 @@ class SolicitudAula extends Model
     public $timestamps = false;
     protected $keyType = 'string';
     protected $fillable = [
-        'id',                        
+        //'id',                        
         'nombreDocenteSolicitud',    
         'apellidoDocenteSolicitud',  
         'numeroEstudiantesSolicitud',
@@ -21,8 +21,9 @@ class SolicitudAula extends Model
         'horaFinSolicitud',          
         'periodoSolicitud',          
         'estadoSolicitud',           
-        'nombreMateria',             
-        'grupoMateria',              
+        'materia_id'
+        //'nombreMateria',             
+        //'grupoMateria',              
     ];
     protected $hidden = ['created_at', 'updated_at'];
 }

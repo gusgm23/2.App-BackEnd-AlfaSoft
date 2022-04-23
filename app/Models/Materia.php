@@ -9,13 +9,13 @@ class Materia extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $keyType = 'string';
+    //protected $keyType = 'string';
     protected $fillable = [
-        'id', 
-        'nombreMateria', 
-        'grupoMateria',
-        'codigoMateria',
-        'name'
+        //'id', 
+        'codigoMateria', 
+        'nombreMateria',
+        'estadoMateria',
+        'user_id'
     ];
     protected $hidden = ['created_at', 'updated_at'];
 }

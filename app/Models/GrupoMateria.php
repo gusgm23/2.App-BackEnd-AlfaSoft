@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Rol extends Model
+class GrupoMateria extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    //protected $keyType = 'string';
-    protected $fillable = [
-        //'id', 
-        'rol', 
-        'estado'
+    protected $fillable = [ 
+        'grupoMateria', 
+        'estadoGrupoMateria',
+        'materia_id'
     ];
     protected $hidden = ['created_at', 'updated_at'];
 }

@@ -34,6 +34,20 @@ Route::put('actualizarUsuarios/{id}'    ,'\App\Http\Controllers\UserController@u
 Route::delete('eliminarUsuarios/{id}'   ,'\App\Http\Controllers\UserController@deleteUserId');
 Route::get('obtenerUsuariosActivos'     ,'\App\Http\Controllers\UserController@getUserActivos');
 
+//API para las materias
+Route::get('obtenerMaterias'            ,'\App\Http\Controllers\MateriaController@getMateria');
+Route::get('obtenerMateriasId/{id}'     ,'\App\Http\Controllers\MateriaController@getMateriaId');
+Route::post('crearMateria'              ,'\App\Http\Controllers\MateriaController@createMateria');
+Route::put('actualizarMateria/{id}'     ,'\App\Http\Controllers\MateriaController@updateMateria');
+Route::delete('eliminarMateria/{id}'    ,'\App\Http\Controllers\MateriaController@deleteMateriaId');
+
+//API para los grupos
+Route::get('obtenerGrupos'              ,'\App\Http\Controllers\GrupoMateriaController@getGrupoMateria');
+Route::get('obtenerGruposId/{id}'       ,'\App\Http\Controllers\GrupoMateriaController@getGrupoMateriaId');
+Route::post('crearGrupos'               ,'\App\Http\Controllers\GrupoMateriaController@createGrupoMateria');
+Route::put('actualizarGrupos/{id}'      ,'\App\Http\Controllers\GrupoMateriaController@updateGrupoMateria');
+Route::delete('eliminarGrupos/{id}'     ,'\App\Http\Controllers\GrupoMateriaController@deleteGrupoMateriaId');
+
 //API para las solicitudes de aulas
 Route::get('obtenerSolicitud'           ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAula');
 Route::get('obtenerSolicitudId/{id}'    ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAulaId');
@@ -48,11 +62,11 @@ Route::post('crearAula'                 ,'\App\Http\Controllers\AulaController@c
 Route::put('actualizarAula/{id}'        ,'\App\Http\Controllers\AulaController@updateAula');
 Route::delete('eliminarAula/{id}'       ,'\App\Http\Controllers\AulaController@deleteAulaId');
 
-//API para las materias
-Route::get('obtenerMaterias'            ,'\App\Http\Controllers\MateriaController@getMateria');
-Route::get('obtenerMateriasId/{id}'     ,'\App\Http\Controllers\MateriaController@getMateriaId');
-Route::post('crearMateria'              ,'\App\Http\Controllers\MateriaController@createMateria');
-Route::put('actualizarMateria/{id}'     ,'\App\Http\Controllers\MateriaController@updateMateria');
-Route::delete('eliminarMateria/{id}'    ,'\App\Http\Controllers\MateriaController@deleteMateriaId');
+
+
+
+
+
+
 
 
