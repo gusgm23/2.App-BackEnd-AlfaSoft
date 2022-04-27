@@ -22,7 +22,6 @@ class CreateSolicitudAulasTable extends Migration
             $table->string('motivoSolicitud');
             $table->string('fechaSolicitud');
             $table->string('horaInicioSolicitud');
-            $table->string('horaFinSolicitud');
             $table->string('periodoSolicitud');
             $table->string('estadoSolicitud');
             $table->timestamps();
