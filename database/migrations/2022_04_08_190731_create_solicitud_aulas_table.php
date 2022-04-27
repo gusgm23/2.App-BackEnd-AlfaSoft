@@ -43,7 +43,6 @@ class CreateSolicitudAulasTable extends Migration
             'motivoSolicitud'               =>'Examen de primer parcial',
             'fechaSolicitud'                =>'22/04/2022',
             'horaInicioSolicitud'           =>'12:45',
-            'horaFinSolicitud'              =>'14:15',
             'periodoSolicitud'              =>'1 periodo',
             'estadoSolicitud'               =>'pendiente',
             'materia_id'                    =>1

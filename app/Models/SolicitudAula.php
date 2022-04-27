@@ -17,8 +17,7 @@ class SolicitudAula extends Model
         'numeroEstudiantesSolicitud',
         'motivoSolicitud',           
         'fechaSolicitud',            
-        'horaInicioSolicitud',       
-        'horaFinSolicitud',          
+        'horaInicioSolicitud',                
         'periodoSolicitud',          
         'estadoSolicitud',           
         'materia_id'
