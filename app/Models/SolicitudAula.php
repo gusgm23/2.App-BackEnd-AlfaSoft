@@ -9,7 +9,7 @@ class SolicitudAula extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $keyType = 'string';
+    //protected $keyType = 'string';
     protected $fillable = [
         //'id',                        
         'nombreDocenteSolicitud',    
@@ -19,7 +19,9 @@ class SolicitudAula extends Model
         'fechaSolicitud',            
         'horaInicioSolicitud',                
         'periodoSolicitud',          
-        'estadoSolicitud',           
+        'estadoSolicitud', 
+        'materiaSolicitud',
+        'grupoSolicitud',          
         'materia_id'
         //'nombreMateria',             
         //'grupoMateria',              

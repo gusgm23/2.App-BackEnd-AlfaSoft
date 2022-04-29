@@ -24,6 +24,8 @@ class CreateSolicitudAulasTable extends Migration
             $table->string('horaInicioSolicitud');
             $table->string('periodoSolicitud');
             $table->string('estadoSolicitud');
+            $table->string('materiaSolicitud');
+            $table->string('grupoSolicitud');
             $table->timestamps();
 
             $table->integer('materia_id')->unsigned();
@@ -44,6 +46,8 @@ class CreateSolicitudAulasTable extends Migration
             'horaInicioSolicitud'           =>'12:45',
             'periodoSolicitud'              =>'1 periodo',
             'estadoSolicitud'               =>'pendiente',
+            'materiaSolicitud'              =>'Algebra I',
+            'grupoSolicitud'                =>'1',
             'materia_id'                    =>1
             //'nombreMateria'                 =>'materia-1',
             //'grupoMateria'                  =>'materia-1'
