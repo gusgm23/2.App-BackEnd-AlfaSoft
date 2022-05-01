@@ -46,22 +46,22 @@ class CreateUsersTable extends Migration
 
         DB::table('users')->insert(array(
             //'id'=>'user-1',
-            'name'=>                'Carla',
-            'apellido'=>            'Salazar',          
+            'name'=>                'Corina',
+            'apellido'=>            'Flores',          
             'telefonoUsuario'=>     '73443553',
             'direccionUsuario'=>    'av. heroinas',
-            'email'=>               'carla@gmail.com',
+            'email'=>               'corina@gmail.com',
             'password'=>            '123456',
             'estadoUsuario'=>       'Activo',
             'rol_id'=>              2
         ));
 
         DB::table('users')->insert(array(
-            'name'=>                'Alfredo',
-            'apellido'=>            'Delgadillo',
+            'name'=>                'Carla',
+            'apellido'=>            'Salazar',
             'telefonoUsuario'=>     '77384564',
             'direccionUsuario'=>    'Av. Panamericana',
-            'email'=>               'alfredo@gmail.com',
+            'email'=>               'carla@gmail.com',
             'password'=>            '123456',
             'estadoUsuario'=>       'Activo',
             'rol_id'=>              2

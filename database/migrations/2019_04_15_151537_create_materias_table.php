@@ -33,7 +33,7 @@ class CreateMateriasTable extends Migration
             'codigoMateria'     =>'242344543',
             'nombreMateria'     =>'Introduccion a la programacion',
             'estadoMateria'     =>'Actico',
-            'user_id'           =>2
+            'user_id'           =>3
             //'grupoMateria'=>'1',
             //'name'=>'user-1'
         ));
