@@ -24,22 +24,54 @@ class CreateGrupoMateriasTable extends Migration
         });
 
         DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'Grupo 1',
-            'estadoGrupoMateria'        =>'Activo',
+            'grupoMateria'              =>'1',
+            'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
 
         DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'Grupo 2',
-            'estadoGrupoMateria'        =>'Activo',
+            'grupoMateria'              =>'2',
+            'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
 
         DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'Grupo 3',
-            'estadoGrupoMateria'        =>'Activo',
+            'grupoMateria'              =>'3',
+            'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
+
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'4',
+            'estadoGrupoMateria'        =>'Habilitado',
+            'materia_id'                =>1
+        ));
+
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'5',
+            'estadoGrupoMateria'        =>'Habilitado',
+            'materia_id'                =>1
+        ));
+
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'6',
+            'estadoGrupoMateria'        =>'Habilitado',
+            'materia_id'                =>1
+        ));
+
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'7',
+            'estadoGrupoMateria'        =>'Habilitado',
+            'materia_id'                =>1
+        ));
+
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'10',
+            'estadoGrupoMateria'        =>'Habilitado',
+            'materia_id'                =>1
+        ));
+
+        
     }
 
     /**

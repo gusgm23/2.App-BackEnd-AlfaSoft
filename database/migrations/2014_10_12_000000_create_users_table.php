@@ -66,6 +66,61 @@ class CreateUsersTable extends Migration
             'estadoUsuario'=>       'Activo',
             'rol_id'=>              2
         ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Maria Benita',
+            'apellido'=>            'Cespedes Guizada',
+            'telefonoUsuario'=>     '70345435',
+            'direccionUsuario'=>    'Av. Blanco Galindo',
+            'email'=>               'benita@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Activo',
+            'rol_id'=>              2
+        ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Cecilia Beatriz',
+            'apellido'=>            'Castro Lazarte',
+            'telefonoUsuario'=>     '76566321',
+            'direccionUsuario'=>    'Av. Petrolera',
+            'email'=>               'cecilia@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Activo',
+            'rol_id'=>              2
+        ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Gualberto',
+            'apellido'=>            'Leon Romero',
+            'telefonoUsuario'=>     '67355322',
+            'direccionUsuario'=>    'C. Mostajo y Mandilla',
+            'email'=>               'gualberto@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Activo',
+            'rol_id'=>              2
+        ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Demetrio',
+            'apellido'=>            'Juchani Bazualdo',
+            'telefonoUsuario'=>     '77584950',
+            'direccionUsuario'=>    'Av. Ecologica',
+            'email'=>               'Demetrio@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Activo',
+            'rol_id'=>              2
+        ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Patricia',
+            'apellido'=>            'Romero Rodriguez',
+            'telefonoUsuario'=>     '67377483',
+            'direccionUsuario'=>    'Av. Villazon',
+            'email'=>               'patricia@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Activo',
+            'rol_id'=>              2
+        ));
     }
 
     /**

@@ -32,7 +32,7 @@ class CreateMateriasTable extends Migration
             //'id'=>'materia-1',
             'codigoMateria'     =>'242344543',
             'nombreMateria'     =>'Introduccion a la programacion',
-            'estadoMateria'     =>'Actico',
+            'estadoMateria'     =>'Habilitado',
             'user_id'           =>3
             //'grupoMateria'=>'1',
             //'name'=>'user-1'
@@ -41,8 +41,36 @@ class CreateMateriasTable extends Migration
         DB::table('materias')->insert(array (
             'codigoMateria'     =>'234234643',
             'nombreMateria'     =>'Calculo I',
-            'estadoMateria'     =>'Activo',
-            'user_id'           =>3
+            'estadoMateria'     =>'Habilitado',
+            'user_id'           =>7
+        ));
+
+        DB::table('materias')->insert(array (
+            'codigoMateria'     =>'220334565',
+            'nombreMateria'     =>'Ingles I',
+            'estadoMateria'     =>'Habilitado',
+            'user_id'           =>4
+        ));
+
+        DB::table('materias')->insert(array (
+            'codigoMateria'     =>'223435667',
+            'nombreMateria'     =>'FIsica I',
+            'estadoMateria'     =>'Habilitado',
+            'user_id'           =>5
+        ));
+
+        DB::table('materias')->insert(array (
+            'codigoMateria'     =>'200346787',
+            'nombreMateria'     =>'Algebra I',
+            'estadoMateria'     =>'Habilitado',
+            'user_id'           =>6
+        ));
+
+        DB::table('materias')->insert(array (
+            'codigoMateria'     =>'200345532',
+            'nombreMateria'     =>'Metodologia Investigacion y Tec.',
+            'estadoMateria'     =>'Habilitado',
+            'user_id'           =>8
         ));
     }
 
