@@ -42,4 +42,10 @@ class GrupoMateriaController extends Controller
         $grupo->delete();
         return response()->json(['Mensaje'=>'Grupo fue Eliminado'],200);
     }
+
+    //para ver los grupos de materias que estan activos
+    public function getGrupoMateriasActivas(){
+        $grupo = GrupoMateria::select("*")->where("estadoGrupoMateria", "=", "Habilitado")->get();
+        return response()->json($grupo,200);
+    }
 }

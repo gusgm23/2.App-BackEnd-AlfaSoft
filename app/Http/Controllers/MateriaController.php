@@ -42,4 +42,10 @@ class MateriaController extends Controller
         $materia->delete();
         return response()->json(['Mensaje'=>'Materia fue Eliminada'],200);
     }
+
+    //para ver las materias que estan activas
+    public function getMateriasActivas(){
+        $materia = Materia::select("*")->where("estadoMateria", "=", "Habilitado")->get();
+        return response()->json($materia,200);
+    }
 }

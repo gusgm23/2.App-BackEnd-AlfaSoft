@@ -72,6 +72,13 @@ class CreateMateriasTable extends Migration
             'estadoMateria'     =>'Habilitado',
             'user_id'           =>8
         ));
+
+        DB::table('materias')->insert(array (
+            'codigoMateria'     =>'203247632',
+            'nombreMateria'     =>'Proyecto Final',
+            'estadoMateria'     =>'Deshabilitado',
+            'user_id'           =>8
+        ));
     }
 
     /**

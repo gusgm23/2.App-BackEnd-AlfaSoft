@@ -27,6 +27,7 @@ class User extends Authenticatable
         'email',
         'password',
         'estadoUsuario',
+        'cargoUsuario',
         'rol_id'
         
     ];

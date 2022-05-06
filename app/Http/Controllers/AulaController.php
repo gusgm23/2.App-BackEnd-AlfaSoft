@@ -40,4 +40,10 @@ class AulaController extends Controller
         $aula->delete();
         return response()->json(['Mensaje'=>'Aula fue Eliminado'],200);
     }
+
+    //para ver las aulas que estan libres
+    public function getAulasLibres(){
+        $aula = Aula::select("*")->where("estadoAula", "=", "Libre")->get();
+        return response()->json($aula,200);
+    }
 }

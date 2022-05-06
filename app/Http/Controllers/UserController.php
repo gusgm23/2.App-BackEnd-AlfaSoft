@@ -42,7 +42,7 @@ class UserController extends Controller
 
     //para ver los usuarios que estan activos
     public function getUserActivos(){
-        $user = User::select("*")->where("estadoUsuario", "=", "Activo")->get();
+        $user = User::select("*")->where("estadoUsuario", "=", "Habilitado")->get();
         return response()->json($user,200);
     }
 }

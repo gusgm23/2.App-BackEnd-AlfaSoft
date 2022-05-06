@@ -38,40 +38,44 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'3',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>2
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'4',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>2
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'5',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>3
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'6',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>3
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'7',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>4
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'10',
             'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>1
+            'materia_id'                =>5
         ));
 
-        
+        DB::table('grupo_materias')->insert(array(
+            'grupoMateria'              =>'100',
+            'estadoGrupoMateria'        =>'Inhabilitado',
+            'materia_id'                =>5
+        ));
     }
 
     /**

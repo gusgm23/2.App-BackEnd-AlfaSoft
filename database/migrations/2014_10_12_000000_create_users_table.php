@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('estadoUsuario');
+            $table->string('cargoUsuario');
             $table->rememberToken();
             $table->timestamps();
 
@@ -40,7 +41,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Ayachuco',
             'email'=>               'alfasoft@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Administrador',
             'rol_id'=>              1
         ));
 
@@ -52,7 +54,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'av. heroinas',
             'email'=>               'corina@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -63,7 +66,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Panamericana',
             'email'=>               'carla@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -74,7 +78,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Blanco Galindo',
             'email'=>               'benita@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -85,7 +90,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Petrolera',
             'email'=>               'cecilia@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -96,7 +102,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'C. Mostajo y Mandilla',
             'email'=>               'gualberto@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -107,7 +114,8 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Ecologica',
             'email'=>               'Demetrio@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
 
@@ -118,8 +126,21 @@ class CreateUsersTable extends Migration
             'direccionUsuario'=>    'Av. Villazon',
             'email'=>               'patricia@gmail.com',
             'password'=>            '123456',
-            'estadoUsuario'=>       'Activo',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
+        ));
+
+        DB::table('users')->insert(array(
+            'name'=>                'Gustavo',
+            'apellido'=>            'Gonzales Mosquera',
+            'telefonoUsuario'=>     '77483376',
+            'direccionUsuario'=>    'Zona Chilimarca',
+            'email'=>               'gustavo@gmail.com',
+            'password'=>            '123456',
+            'estadoUsuario'=>       'Deshabilitado',
+            'cargoUsuario'=>        'Auxiliar',
+            'rol_id'=>              3
         ));
     }
 

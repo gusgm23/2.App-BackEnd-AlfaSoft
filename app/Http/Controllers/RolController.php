@@ -46,7 +46,7 @@ class RolController extends Controller
 
     //para ver los roles que estan activos
     public function getRolesActivos(){
-        $rol = Rol::select("*")->where("estado", "=", "Activo")->get();
+        $rol = Rol::select("*")->where("estado", "=", "Habilitado")->get();
         return response()->json($rol,200);
     }
 }
