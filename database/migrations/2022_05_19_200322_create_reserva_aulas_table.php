@@ -21,7 +21,7 @@ class CreateReservaAulasTable extends Migration
             $table->timestamps();
 
             $table->integer('aula_id')->unsigned();
-            $table->foreing('aula_id')->references('id')->in('aulas')->nullable()->onDelete('SET NULL');
+            $table->foreign('aula_id')->references('id')->on('aulas')->nullable()->onDelete('SET NULL');
         });
 
         DB::table('reserva_aulas')->insert(array(
