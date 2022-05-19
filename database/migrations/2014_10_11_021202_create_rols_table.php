@@ -24,7 +24,7 @@ class CreateRolsTable extends Migration
         DB::table('rols')->insert(array(
             //'id'=>'rol-1',
             'rol'=>'Administrador',
-            'estado'=>'Habilitado'
+            'estado'=>'Deshabilitado'
         ));
 
         DB::table('rols')->insert(array(

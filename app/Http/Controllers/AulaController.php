@@ -12,6 +12,7 @@ class AulaController extends Controller
     public function getAula(){
         return response()->json(Aula::all(),200);
     }
+
     public function getAulaId($id){
         $aula = Aula::find($id);
         if(is_null($aula)){
@@ -19,6 +20,7 @@ class AulaController extends Controller
         }
         return response()->json($aula::find($id),200);
     }
+
     public function createAula(Request $request){
         $aula = Aula::create($request->all());
         return response($aula,200);
@@ -44,6 +46,12 @@ class AulaController extends Controller
     //para ver las aulas que estan libres
     public function getAulasLibres(){
         $aula = Aula::select("*")->where("estadoAula", "=", "Libre")->get();
+        return response()->json($aula,200);
+    }
+
+    //para ver las aulas que estan habilitadas a la hora de eliminarlas
+    public function getAulasHabilitadas(){
+        $aula = Aula::select("*")->where("habilitacionAula", "=", "Habilitado")->get();
         return response()->json($aula,200);
     }
 }

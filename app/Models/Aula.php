@@ -14,6 +14,7 @@ class Aula extends Model
         'nombreAula', 
         'capacidadAula',
         'estadoAula',
+        'habilitacionAula',
         'solicitud_id'
     ];
     protected $hidden = ['created_at', 'updated_at'];

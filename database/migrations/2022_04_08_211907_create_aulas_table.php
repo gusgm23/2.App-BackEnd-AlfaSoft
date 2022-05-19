@@ -18,6 +18,7 @@ class CreateAulasTable extends Migration
             $table->string('nombreAula');
             $table->string('capacidadAula');
             $table->string('estadoAula');
+            $table->string('habilitacionAula');
             $table->timestamps();
 
             $table->integer('solicitud_id')->unsigned();
@@ -28,6 +29,7 @@ class CreateAulasTable extends Migration
             'nombreAula'        =>'692a',
             'capacidadAula'     =>'90',
             'estadoAula'        =>'Libre',
+            'habilitacionAula'  =>'Habilitado',
             'solicitud_id'      =>1
         ));
 
@@ -35,6 +37,7 @@ class CreateAulasTable extends Migration
             'nombreAula'        =>'655',
             'capacidadAula'     =>'30',
             'estadoAula'        =>'Libre',
+            'habilitacionAula'  =>'Habilitado',
             'solicitud_id'      =>1
         ));
 
@@ -42,6 +45,7 @@ class CreateAulasTable extends Migration
             'nombreAula'        =>'690A',
             'capacidadAula'     =>'90',
             'estadoAula'        =>'Ocupado',
+            'habilitacionAula'  =>'Inhabilitado',
             'solicitud_id'      =>2
         ));
     }

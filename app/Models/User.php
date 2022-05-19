@@ -26,6 +26,7 @@ class User extends Authenticatable
         'direccionUsuario',
         'email',
         'password',
+        'repeatPassword',
         'estadoUsuario',
         'cargoUsuario',
         'rol_id'

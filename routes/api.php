@@ -64,6 +64,7 @@ Route::post('crearAula'                 ,'\App\Http\Controllers\AulaController@c
 Route::put('actualizarAula/{id}'        ,'\App\Http\Controllers\AulaController@updateAula');
 Route::delete('eliminarAula/{id}'       ,'\App\Http\Controllers\AulaController@deleteAulaId');
 Route::get('obtenerAulaLibre'           ,'\App\Http\Controllers\AulaController@getAulasLibres');
+Route::get('obtenerAulaHabilitada'      ,'\App\Http\Controllers\AulaController@getAulasHabilitadas');
 
 
 
