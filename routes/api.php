@@ -70,8 +70,8 @@ Route::get('obtenerAulaHabilitada'      ,'\App\Http\Controllers\AulaController@g
 Route::get('obtenerAulasReservadas'            ,'\App\Http\Controllers\ReservaAulasController@getReservaAula');
 Route::get('obtenerAulasReservadasId/{id}'     ,'\App\Http\Controllers\ReservaAulasController@getReservaAulaId');
 Route::post('crearAulasReservadas'             ,'\App\Http\Controllers\ReservaAulasController@createReservaAula');
-Route::put('actualizarAulasReservadas/{id}'     ,'\App\Http\Controllers\ReservaAulasController@updateReservaAula');
-Route::delete('eliminarAulasReservadas'        ,'\App\Http\Controllers\ReservaAulasController@deleteReservaAulaId');
+Route::put('actualizarAulasReservadas/{id}'    ,'\App\Http\Controllers\ReservaAulasController@updateReservaAula');
+Route::delete('eliminarAulasReservadas/{id}'   ,'\App\Http\Controllers\ReservaAulasController@deleteReservaAulaId');
 
 
 
