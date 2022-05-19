@@ -66,6 +66,8 @@ Route::delete('eliminarAula/{id}'       ,'\App\Http\Controllers\AulaController@d
 Route::get('obtenerAulaLibre'           ,'\App\Http\Controllers\AulaController@getAulasLibres');
 Route::get('obtenerAulaHabilitada'      ,'\App\Http\Controllers\AulaController@getAulasHabilitadas');
 
+//API para las aulas reservadas
+Route::get('obtenerAulasReservadas'     ,'App\Http\Controllers\ReservaAulasController@getReservaAula');
 
 
 
