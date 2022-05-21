@@ -67,6 +67,20 @@ class CreateSolicitudAulasTable extends Migration
             'materia_id'                    =>2
         ));
 
+        DB::table('solicitud_aulas')->insert(array(
+            'nombreDocenteSolicitud'        =>'Gualberto',
+            'apellidoDocenteSolicitud'      =>'Leon',
+            'numeroEstudiantesSolicitud'    =>'45',
+            'motivoSolicitud'               =>'Examen de segundo parcial',
+            'fechaSolicitud'                =>'2022-05-21',
+            'horaInicioSolicitud'           =>'18:45',
+            'periodoSolicitud'              =>'1',
+            'estadoSolicitud'               =>'atendido',
+            'materiaSolicitud'              =>'Algebra I',
+            'grupoSolicitud'                =>'3',
+            'materia_id'                    =>5
+        ));
+
     }
 
     /**

@@ -42,4 +42,11 @@ class SolicitudAulaController extends Controller
         $solicitud->delete();
         return response()->json(['Mensaje'=>'Solicitud Eliminada'],200);
     }
+
+    //Para ver las solicitudes que estan pendientes
+    public function getSolicitudAulaEstado(){
+        $solicitud = SolicitudAula::select("*")->where("estadoSolicitud", "=", "pendiente")->get();
+        return response()->json($solicitud,200);
+    }
+
 }

@@ -56,6 +56,7 @@ Route::get('obtenerSolicitudId/{id}'    ,'\App\Http\Controllers\SolicitudAulaCon
 Route::post('crearSolicitud'            ,'\App\Http\Controllers\SolicitudAulaController@createSolicitudAula');
 Route::put('actualizarSolicitud/{id}'   ,'\App\Http\Controllers\SolicitudAulaController@updateSolicitudAula');
 Route::delete('eliminarSolicitud/{id}'  ,'\App\Http\Controllers\SolicitudAulaController@deleteSolicitudAulaId');
+Route::get('obtenerSolicitudPendiente'  ,'\App\Http\Controllers\SolicitudAulaController@getSolicitudAulaEstado');
 
 //API para las aulas
 Route::get('obtenerAula'                ,'\App\Http\Controllers\AulaController@getAula');
