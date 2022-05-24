@@ -145,7 +145,7 @@ class CreateUsersTable extends Migration
             'apellido'=>            'Gonzales Mosquera',
             'telefonoUsuario'=>     '77483376',
             'direccionUsuario'=>    'Zona Chilimarca',
-            'email'=>               'gustavo@est.umss.edu',
+            'email'=>               '201410798@est.umss.edu',
             'password'=>            '123456',
             'repeatPassword'=>      '123456',
             'estadoUsuario'=>       'Deshabilitado',
