@@ -44,6 +44,22 @@ class CreateAulasTable extends Migration
         DB::table('aulas')->insert(array(
             'nombreAula'        =>'690A',
             'capacidadAula'     =>'90',
+            'estadoAula'        =>'Libre',
+            'habilitacionAula'  =>'Habilitado',
+            'solicitud_id'      =>1
+        ));
+
+        DB::table('aulas')->insert(array(
+            'nombreAula'        =>'690B',
+            'capacidadAula'     =>'90',
+            'estadoAula'        =>'Libre',
+            'habilitacionAula'  =>'Habilitado',
+            'solicitud_id'      =>1
+        ));
+
+        DB::table('aulas')->insert(array(
+            'nombreAula'        =>'690C',
+            'capacidadAula'     =>'90',
             'estadoAula'        =>'Ocupado',
             'habilitacionAula'  =>'Inhabilitado',
             'solicitud_id'      =>2

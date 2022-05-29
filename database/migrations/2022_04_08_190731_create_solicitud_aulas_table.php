@@ -75,8 +75,22 @@ class CreateSolicitudAulasTable extends Migration
             'fechaSolicitud'                =>'2022-05-21',
             'horaInicioSolicitud'           =>'18:45',
             'periodoSolicitud'              =>'1',
-            'estadoSolicitud'               =>'atendido',
+            'estadoSolicitud'               =>'pendiente',
             'materiaSolicitud'              =>'Algebra I',
+            'grupoSolicitud'                =>'3',
+            'materia_id'                    =>5
+        ));
+
+        DB::table('solicitud_aulas')->insert(array(
+            'nombreDocenteSolicitud'        =>'Maria Benita',
+            'apellidoDocenteSolicitud'      =>'Cespedes Guizada',
+            'numeroEstudiantesSolicitud'    =>'35',
+            'motivoSolicitud'               =>'Examen de segundo parcial',
+            'fechaSolicitud'                =>'2022-05-30',
+            'horaInicioSolicitud'           =>'08:15',
+            'periodoSolicitud'              =>'1',
+            'estadoSolicitud'               =>'pendiente',
+            'materiaSolicitud'              =>'Ingles I',
             'grupoSolicitud'                =>'3',
             'materia_id'                    =>5
         ));
