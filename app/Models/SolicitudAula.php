@@ -15,7 +15,9 @@ class SolicitudAula extends Model
         'nombreDocenteSolicitud',    
         'apellidoDocenteSolicitud',  
         'numeroEstudiantesSolicitud',
-        'motivoSolicitud',           
+        'motivoSolicitud', 
+        //nuevo atributo
+        'motivoRechazo',          
         'fechaSolicitud',            
         'horaInicioSolicitud',                
         'periodoSolicitud',          

@@ -20,6 +20,8 @@ class CreateSolicitudAulasTable extends Migration
             $table->string('apellidoDocenteSolicitud');
             $table->string('numeroEstudiantesSolicitud');
             $table->string('motivoSolicitud');
+            //nuevo atributo
+            $table->string('motivoRechazo');
             $table->string('fechaSolicitud');
             $table->string('horaInicioSolicitud');
             $table->string('periodoSolicitud');
@@ -42,6 +44,8 @@ class CreateSolicitudAulasTable extends Migration
             'apellidoDocenteSolicitud'      =>'Salazar',
             'numeroEstudiantesSolicitud'    =>'40',
             'motivoSolicitud'               =>'Examen de primer parcial',
+            //nuevo atributo
+            'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-04',
             'horaInicioSolicitud'           =>'12:45',
             'periodoSolicitud'              =>'1',
@@ -58,6 +62,7 @@ class CreateSolicitudAulasTable extends Migration
             'apellidoDocenteSolicitud'      =>'Delgadillo',
             'numeroEstudiantesSolicitud'    =>'35',
             'motivoSolicitud'               =>'Examen de primer parcial',
+            'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-04',
             'horaInicioSolicitud'           =>'15:45',
             'periodoSolicitud'              =>'1',
@@ -72,6 +77,7 @@ class CreateSolicitudAulasTable extends Migration
             'apellidoDocenteSolicitud'      =>'Leon',
             'numeroEstudiantesSolicitud'    =>'45',
             'motivoSolicitud'               =>'Examen de segundo parcial',
+            'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-21',
             'horaInicioSolicitud'           =>'18:45',
             'periodoSolicitud'              =>'1',
@@ -86,6 +92,7 @@ class CreateSolicitudAulasTable extends Migration
             'apellidoDocenteSolicitud'      =>'Cespedes Guizada',
             'numeroEstudiantesSolicitud'    =>'35',
             'motivoSolicitud'               =>'Examen de segundo parcial',
+            'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-30',
             'horaInicioSolicitud'           =>'08:15',
             'periodoSolicitud'              =>'1',
