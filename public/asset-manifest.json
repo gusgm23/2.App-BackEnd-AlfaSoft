@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d5718dfe.css",
+    "main.js": "/static/js/main.d25cc950.js",
+    "static/media/primeicons.svg": "/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/primeicons.eot": "/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.91bacab1f083f2795272.ttf",
+    "static/media/warning.svg": "/static/media/warning.7e55ac74a45638987972fff94b54a9d3.svg",
+    "static/media/UMSS_logo.png": "/static/media/UMSS_logo.5fbb0181d16c39d321c6.png",
+    "static/media/collaboration.svg": "/static/media/collaboration.f77e17df342494038f93c6c6864fa02d.svg",
+    "static/media/preg.svg": "/static/media/preg.10894b91678551e78c7b7437df7b59a8.svg",
+    "static/media/noPermitido.svg": "/static/media/noPermitido.dfd2eb599bdf369e30f299fd83422139.svg",
+    "static/media/home.svg": "/static/media/home.dfe36949472de863fa91b21f6c720be0.svg",
+    "static/media/advertencia.svg": "/static/media/advertencia.f027cc58c3d3808b5e302eb7028218a6.svg",
+    "index.html": "/index.html",
+    "static/media/ok.svg": "/static/media/ok.095b965514a11ee6b11863c9aa51e733.svg",
+    "main.d5718dfe.css.map": "/static/css/main.d5718dfe.css.map",
+    "main.d25cc950.js.map": "/static/js/main.d25cc950.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5718dfe.css",
+    "static/js/main.d25cc950.js"
+  ]
+}
