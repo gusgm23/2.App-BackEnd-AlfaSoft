@@ -35,7 +35,7 @@ class CreateReservaAulasTable extends Migration
             'fechaReserva'          =>'2022-05-04',
             'horaInicioReserva'     =>'12:45',
             'horaFinalReserva'      =>'14:15',
-            'aula_id'               =>2
+            'aula_id'               =>1
         ));
 
     }
