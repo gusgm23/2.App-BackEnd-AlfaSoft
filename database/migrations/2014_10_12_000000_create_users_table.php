@@ -140,18 +140,6 @@ class CreateUsersTable extends Migration
             'rol_id'=>              2
         ));
 
-        DB::table('users')->insert(array(
-            'name'=>                'Gustavo',
-            'apellido'=>            'Gonzales Mosquera',
-            'telefonoUsuario'=>     '77483376',
-            'direccionUsuario'=>    'Zona Chilimarca',
-            'email'=>               '201410798@est.umss.edu',
-            'password'=>            '123456',
-            'repeatPassword'=>      '123456',
-            'estadoUsuario'=>       'Deshabilitado',
-            'cargoUsuario'=>        'Auxiliar',
-            'rol_id'=>              3
-        ));
     }
 
     /**
