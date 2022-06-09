@@ -19,6 +19,7 @@ class CreateSolicitudAulasTable extends Migration
             $table->string('nombreDocenteSolicitud');
             $table->string('apellidoDocenteSolicitud');
             $table->string('numeroEstudiantesSolicitud');
+            $table->string('cantidadEstudiantesAsignada');
             $table->string('motivoSolicitud');
             //nuevo atributo
             $table->string('motivoRechazo');
@@ -43,7 +44,8 @@ class CreateSolicitudAulasTable extends Migration
             'nombreDocenteSolicitud'        =>'Carla',
             'apellidoDocenteSolicitud'      =>'Salazar',
             'numeroEstudiantesSolicitud'    =>'40',
-            'motivoSolicitud'               =>'Examen de primer parcial',
+            'cantidadEstudiantesAsignada'   =>'0',
+            'motivoSolicitud'               =>'Examen Primer Parcial',
             //nuevo atributo
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-04',
@@ -53,8 +55,6 @@ class CreateSolicitudAulasTable extends Migration
             'materiaSolicitud'              =>'Introduccion a la programacion',
             'grupoSolicitud'                =>'1',
             'materia_id'                    =>1
-            //'nombreMateria'                 =>'materia-1',
-            //'grupoMateria'                  =>'materia-1'
         ));
 
 
@@ -62,7 +62,8 @@ class CreateSolicitudAulasTable extends Migration
             'nombreDocenteSolicitud'        =>'Gualberto',
             'apellidoDocenteSolicitud'      =>'Leon Romero',
             'numeroEstudiantesSolicitud'    =>'45',
-            'motivoSolicitud'               =>'Examen de segundo parcial',
+            'cantidadEstudiantesAsignada'   =>'0',
+            'motivoSolicitud'               =>'Examen Segundo Parcial',
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-21',
             'horaInicioSolicitud'           =>'18:45',
@@ -77,7 +78,8 @@ class CreateSolicitudAulasTable extends Migration
             'nombreDocenteSolicitud'        =>'Maria Benita',
             'apellidoDocenteSolicitud'      =>'Cespedes Guizada',
             'numeroEstudiantesSolicitud'    =>'35',
-            'motivoSolicitud'               =>'Examen de segundo parcial',
+            'cantidadEstudiantesAsignada'   =>'0',
+            'motivoSolicitud'               =>'Examen Segundo Parcial',
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-30',
             'horaInicioSolicitud'           =>'08:15',

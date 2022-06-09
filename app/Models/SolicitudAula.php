@@ -15,6 +15,7 @@ class SolicitudAula extends Model
         'nombreDocenteSolicitud',    
         'apellidoDocenteSolicitud',  
         'numeroEstudiantesSolicitud',
+        'cantidadEstudiantesAsignada',
         'motivoSolicitud', 
         //nuevo atributo
         'motivoRechazo',          
@@ -24,9 +25,7 @@ class SolicitudAula extends Model
         'estadoSolicitud', 
         'materiaSolicitud',
         'grupoSolicitud',          
-        'materia_id'
-        //'nombreMateria',             
-        //'grupoMateria',              
+        'materia_id'                          
     ];
     protected $hidden = ['created_at', 'updated_at'];
 }

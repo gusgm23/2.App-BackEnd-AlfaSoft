@@ -11,6 +11,7 @@ class GrupoMateria extends Model
     public $timestamps = false;
     protected $fillable = [ 
         'grupoMateria', 
+        'idDocente',
         'estadoGrupoMateria',
         'materia_id'
     ];

@@ -16,6 +16,7 @@ class CreateGrupoMateriasTable extends Migration
         Schema::create('grupo_materias', function (Blueprint $table) {
             $table->increments('id');
             $table->string('grupoMateria');
+            $table->string('idDocente');
             $table->string('estadoGrupoMateria');
             $table->timestamps();
 
@@ -25,56 +26,37 @@ class CreateGrupoMateriasTable extends Migration
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'1',
+            'idDocente'                 =>'noAsignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'2',
+            'idDocente'                 =>'noAsignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'3',
+            'idDocente'                 =>'noAsignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>2
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'4',
+            'idDocente'                 =>'noAsignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>2
         ));
 
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'5',
+            'idDocente'                 =>'noAsignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>3
-        ));
-
-        DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'6',
-            'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>3
-        ));
-
-        DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'7',
-            'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>4
-        ));
-
-        DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'10',
-            'estadoGrupoMateria'        =>'Habilitado',
-            'materia_id'                =>5
-        ));
-
-        DB::table('grupo_materias')->insert(array(
-            'grupoMateria'              =>'100',
-            'estadoGrupoMateria'        =>'Inhabilitado',
-            'materia_id'                =>5
         ));
     }
 
