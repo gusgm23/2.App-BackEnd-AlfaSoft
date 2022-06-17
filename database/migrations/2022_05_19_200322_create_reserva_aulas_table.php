@@ -18,6 +18,7 @@ class CreateReservaAulasTable extends Migration
             $table->string('fechaReserva');
             $table->string('horaInicioReserva');
             $table->string('horaFinalReserva');
+            $table->string('idSolicitud');
             $table->timestamps();
 
             $table->integer('aula_id')->unsigned();
@@ -28,6 +29,7 @@ class CreateReservaAulasTable extends Migration
             'fechaReserva'          =>'2022-05-04',
             'horaInicioReserva'     =>'12:45',
             'horaFinalReserva'      =>'14:15',
+            'idSolicitud'           =>'1', 
             'aula_id'               =>1
         ));
 
@@ -35,6 +37,7 @@ class CreateReservaAulasTable extends Migration
             'fechaReserva'          =>'2022-05-04',
             'horaInicioReserva'     =>'12:45',
             'horaFinalReserva'      =>'14:15',
+            'idSolicitud'           =>'2',
             'aula_id'               =>1
         ));
 
