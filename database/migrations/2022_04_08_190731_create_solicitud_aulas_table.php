@@ -32,11 +32,7 @@ class CreateSolicitudAulasTable extends Migration
             $table->timestamps();
 
             $table->integer('materia_id')->unsigned();
-            $table->foreign('materia_id')->references('id')->on('materias')->nullable()->onDelete('SET NULL');
-            //$table->string('nombreMateria');
-            //$table->foreign('nombreMateria')->references('id')->on('materias')->nullable()->onDelete('SET NULL');
-            //$table->string('grupoMateria');
-            //$table->foreign('grupoMateria')->references('id')->on('materias')->nullable()->onDelete('SET NULL');
+            $table->foreign('materia_id')->references('id')->on('materias')->nullable()->onDelete('SET NULL');                        
         });
 
         DB::table('solicitud_aulas')->insert(array(
@@ -49,7 +45,7 @@ class CreateSolicitudAulasTable extends Migration
             //nuevo atributo
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-04',
-            'horaInicioSolicitud'           =>'12:45',
+            'horaInicioSolicitud'           =>'12:45:00',
             'periodoSolicitud'              =>'1',
             'estadoSolicitud'               =>'pendiente',
             'materiaSolicitud'              =>'Introduccion a la programacion',
@@ -66,7 +62,7 @@ class CreateSolicitudAulasTable extends Migration
             'motivoSolicitud'               =>'Examen Segundo Parcial',
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-21',
-            'horaInicioSolicitud'           =>'18:45',
+            'horaInicioSolicitud'           =>'18:45:00',
             'periodoSolicitud'              =>'1',
             'estadoSolicitud'               =>'pendiente',
             'materiaSolicitud'              =>'Algebra I',
@@ -82,7 +78,7 @@ class CreateSolicitudAulasTable extends Migration
             'motivoSolicitud'               =>'Examen Segundo Parcial',
             'motivoRechazo'                 =>'ninguno',
             'fechaSolicitud'                =>'2022-05-30',
-            'horaInicioSolicitud'           =>'08:15',
+            'horaInicioSolicitud'           =>'08:15:00',
             'periodoSolicitud'              =>'1',
             'estadoSolicitud'               =>'pendiente',
             'materiaSolicitud'              =>'Ingles I',
