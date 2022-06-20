@@ -49,4 +49,18 @@ class SolicitudAulaController extends Controller
         return response()->json($solicitud,200);
     }
 
+    public function getSolicitudAulaByUser(Request $request){
+        $name = $request->nombreDocenteSolicitud;
+        $lastName = $request->apellidoDocenteSolicitud;
+        $status = $request->estadoSolicitud;
+ 
+        $solicitud = SolicitudAula::select("solicitud_aulas.*","aulas.nombreAula","aulas.capacidadAula")
+        ->where("nombreDocenteSolicitud", "=", $name)
+        ->where("apellidoDocenteSolicitud", "=", $lastName)
+        ->where("estadoSolicitud", "=", $status)
+        ->leftJoin('aulas', 'solicitud_aulas.id', '=', 'aulas.solicitud_id')
+        ->get();
+        return response()->json($solicitud,200);
+    }
+
 }
