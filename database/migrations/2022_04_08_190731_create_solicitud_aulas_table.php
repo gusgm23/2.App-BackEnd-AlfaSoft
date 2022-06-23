@@ -38,13 +38,13 @@ class CreateSolicitudAulasTable extends Migration
         DB::table('solicitud_aulas')->insert(array(
             //'id'                            =>'solicitud-1',
             'nombreDocenteSolicitud'        =>'Carla',
-            'apellidoDocenteSolicitud'      =>'Salazar',
+            'apellidoDocenteSolicitud'      =>'Salazar Serrudo',
             'numeroEstudiantesSolicitud'    =>'40',
             'cantidadEstudiantesAsignada'   =>'0',
-            'motivoSolicitud'               =>'Examen Primer Parcial',
+            'motivoSolicitud'               =>'Examen Segundo Parcial',
             //nuevo atributo
             'motivoRechazo'                 =>'ninguno',
-            'fechaSolicitud'                =>'2022-05-04',
+            'fechaSolicitud'                =>'2022-06-20',
             'horaInicioSolicitud'           =>'12:45:00',
             'periodoSolicitud'              =>'1',
             'estadoSolicitud'               =>'pendiente',
@@ -70,21 +70,6 @@ class CreateSolicitudAulasTable extends Migration
             'materia_id'                    =>5
         ));
 
-        DB::table('solicitud_aulas')->insert(array(
-            'nombreDocenteSolicitud'        =>'Maria Benita',
-            'apellidoDocenteSolicitud'      =>'Cespedes Guizada',
-            'numeroEstudiantesSolicitud'    =>'35',
-            'cantidadEstudiantesAsignada'   =>'0',
-            'motivoSolicitud'               =>'Examen Segundo Parcial',
-            'motivoRechazo'                 =>'ninguno',
-            'fechaSolicitud'                =>'2022-05-30',
-            'horaInicioSolicitud'           =>'08:15:00',
-            'periodoSolicitud'              =>'1',
-            'estadoSolicitud'               =>'pendiente',
-            'materiaSolicitud'              =>'Ingles I',
-            'grupoSolicitud'                =>'3',
-            'materia_id'                    =>5
-        ));
 
     }
 
