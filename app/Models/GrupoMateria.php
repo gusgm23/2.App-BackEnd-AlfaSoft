@@ -12,6 +12,7 @@ class GrupoMateria extends Model
     protected $fillable = [ 
         'grupoMateria', 
         'idDocente',
+        'idAuxiliar',
         'estadoGrupoMateria',
         'materia_id'
     ];
