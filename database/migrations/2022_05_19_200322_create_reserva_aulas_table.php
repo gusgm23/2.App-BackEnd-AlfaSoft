@@ -18,7 +18,7 @@ class CreateReservaAulasTable extends Migration
             $table->string('fechaReserva');
             $table->string('horaInicioReserva');
             $table->string('horaFinalReserva');
-            $table->string('idSolicitud');
+            $table->integer('idSolicitud');
             $table->timestamps();
 
             $table->integer('aula_id')->unsigned();

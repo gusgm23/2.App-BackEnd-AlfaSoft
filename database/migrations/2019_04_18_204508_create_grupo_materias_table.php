@@ -17,6 +17,7 @@ class CreateGrupoMateriasTable extends Migration
             $table->increments('id');
             $table->string('grupoMateria');
             $table->string('idDocente');
+            $table->string('idAuxiliar');
             $table->string('estadoGrupoMateria');
             $table->timestamps();
 
@@ -27,6 +28,7 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'1',
             'idDocente'                 =>'3',
+            'idAuxiliar'                =>'No asignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
@@ -34,6 +36,7 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'2',
             'idDocente'                 =>'4',
+            'idAuxiliar'                =>'No asignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>1
         ));
@@ -41,6 +44,7 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'3',
             'idDocente'                 =>'4',
+            'idAuxiliar'                =>'No asignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>2
         ));
@@ -48,6 +52,7 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'4',
             'idDocente'                 =>'3',
+            'idAuxiliar'                =>'No asignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>2
         ));
@@ -55,6 +60,7 @@ class CreateGrupoMateriasTable extends Migration
         DB::table('grupo_materias')->insert(array(
             'grupoMateria'              =>'5',
             'idDocente'                 =>'2',
+            'idAuxiliar'                =>'No asignado',
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>3
         ));

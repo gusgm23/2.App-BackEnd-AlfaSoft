@@ -58,7 +58,8 @@ class SolicitudAulaController extends Controller
         ->where("nombreDocenteSolicitud", "=", $name)
         ->where("apellidoDocenteSolicitud", "=", $lastName)
         ->where("estadoSolicitud", "=", $status)
-        ->leftJoin('aulas', 'solicitud_aulas.id', '=', 'aulas.solicitud_id')
+        ->leftJoin('reserva_aulas', 'solicitud_aulas.id', '=', 'reserva_aulas.idSolicitud')
+        ->leftJoin('aulas', 'reserva_aulas.aula_id', '=', 'aulas.id')
         ->get();
         return response()->json($solicitud,200);
     }
