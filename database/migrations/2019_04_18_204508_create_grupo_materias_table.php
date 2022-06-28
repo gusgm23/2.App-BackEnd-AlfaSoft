@@ -1088,8 +1088,6 @@ class CreateGrupoMateriasTable extends Migration
             'estadoGrupoMateria'        =>'Habilitado',
             'materia_id'                =>5
         ));
-                
-
     }
 
     /**
