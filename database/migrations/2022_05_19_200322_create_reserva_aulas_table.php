@@ -25,7 +25,7 @@ class CreateReservaAulasTable extends Migration
             $table->foreign('aula_id')->references('id')->on('aulas')->nullable()->onDelete('SET NULL');
         });
 
-
+        // subida al servidor
     }
 
     /**
