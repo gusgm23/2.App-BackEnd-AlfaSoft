@@ -70,6 +70,12 @@ object-assign
 
 //!Actualizando capacidad de peticion en solicitud
 
+//!Hook para controlar estado de Combobox de docentes
+
+//!Hook para controlar estado de Combobox de estado de grupo
+
 //!Obteniendo la solicitud desde la bd
+
+//!Seccion para validar datos cuando se quiera editar un grupo
 
 //!llamada a metodo encargado de cambiar el estado de una solicitud a "APROBADA"
