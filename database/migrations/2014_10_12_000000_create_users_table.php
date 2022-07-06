@@ -867,7 +867,19 @@ class CreateUsersTable extends Migration
             'cargoUsuario'=>        'Docente',
             'rol_id'=>              2
         ));
-                
+           
+        DB::table('users')->insert(array(
+            'name'=>                'Raquel',
+            'apellido'=>            'Chipana Quilo',
+            'telefonoUsuario'=>     '70708083',
+            'direccionUsuario'=>    'Av. Blanco Galindo km5',
+            'email'=>               'raquel@fcyt.umss.edu.bo',
+            'password'=>            '123456',
+            'repeatPassword'=>      '123456',
+            'estadoUsuario'=>       'Habilitado',
+            'cargoUsuario'=>        'Auxiliar',
+            'rol_id'=>              3
+        ));
 
     }
 

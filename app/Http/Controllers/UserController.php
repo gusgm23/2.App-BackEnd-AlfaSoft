@@ -45,4 +45,10 @@ class UserController extends Controller
         $user = User::select("*")->where("estadoUsuario", "=", "Habilitado")->get();
         return response()->json($user,200);
     }
+
+    //para ver solo usuarios docente o auxiliar
+    public function getUsersDocAux(){
+        $user = User::select("*")->where("docenteAuxiliar", "=", "docenteAuxiliar")->get();
+        return response()->json($user,200);
+    }
 }

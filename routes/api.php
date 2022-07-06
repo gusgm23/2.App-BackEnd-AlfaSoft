@@ -33,6 +33,7 @@ Route::post('crearUsuarios'             ,'\App\Http\Controllers\UserController@c
 Route::put('actualizarUsuarios/{id}'    ,'\App\Http\Controllers\UserController@updateUser');
 Route::delete('eliminarUsuarios/{id}'   ,'\App\Http\Controllers\UserController@deleteUserId');
 Route::get('obtenerUsuariosActivos'     ,'\App\Http\Controllers\UserController@getUserActivos');
+Route::get('obtenerUsuariosDocAux'      ,'\App\Http\Controllers\UserController@getUsersDocAux');
 
 //API para las materias
 Route::get('obtenerMaterias'            ,'\App\Http\Controllers\MateriaController@getMateria');
