@@ -25,21 +25,6 @@ class CreateReservaAulasTable extends Migration
             $table->foreign('aula_id')->references('id')->on('aulas')->nullable()->onDelete('SET NULL');
         });
 
-        DB::table('reserva_aulas')->insert(array(
-            'fechaReserva'          =>'2022-05-04',
-            'horaInicioReserva'     =>'12:45',
-            'horaFinalReserva'      =>'14:15',
-            'idSolicitud'           =>'1', 
-            'aula_id'               =>1
-        ));
-
-        DB::table('reserva_aulas')->insert(array(
-            'fechaReserva'          =>'2022-05-04',
-            'horaInicioReserva'     =>'12:45',
-            'horaFinalReserva'      =>'14:15',
-            'idSolicitud'           =>'2',
-            'aula_id'               =>1
-        ));
 
     }
 
