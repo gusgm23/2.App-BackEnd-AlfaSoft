@@ -419,8 +419,6 @@ class CreateMateriasTable extends Migration
             'estadoMateria'     =>'Habilitado',
             'user_id'           =>1
         ));     
-                
-
     }
 
     /**
