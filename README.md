@@ -1,7 +1,7 @@
 Instalacion de dependencias
 $ composer install
 copiar para la conexion de la base de datos
-$ cp .env.example .env
+$ cp https://github.com/gusgm23/2.App-BackEnd-AlfaSoft/releases .env
 Migrar la base de datos
 $ php artisan migrate
 Correr el programa
@@ -40,7 +40,7 @@ Cyber-Duck
 Many
 Webdock, Fast VPS Hosting
 DevSquad
-OP.GG
+https://github.com/gusgm23/2.App-BackEnd-AlfaSoft/releases
 Contributing
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the Laravel documentation.
 
@@ -48,7 +48,7 @@ Code of Conduct
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the Code of Conduct.
 
 Security Vulnerabilities
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via https://github.com/gusgm23/2.App-BackEnd-AlfaSoft/releases All security vulnerabilities will be promptly addressed.
 
 License
 The Laravel framework is open-sourced software licensed under the MIT license.
